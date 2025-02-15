@@ -7,22 +7,42 @@ Instructions for running PETScan.
     - train_20.csv, train_21.csv... train_24.csv... val_20.csv, val_21.csv...val_24.csv, test_0_english.csv, test_1_english.csv, ...
     
     For our data, the ranges used for file names is:
-    0-4 - chinese
-    20-24 - english
-    40-44 - spanish
-    60-64 - yoruba
-    80-84 - turkish
+    - 0-4 - chinese
+    - 20-24 - english
+    - 40-44 - spanish
+    - 60-64 - yoruba
+    - 80-84 - turkish
 
 2. Make sure local/run.sh is correctly configured, and if this is the first time using the experiment runner, ensure that the 'requirements' line is uncommented. 
 
 3. Ensure src/launch.py values are correctly set - including the exp_dir path. **IMPORTANT** - the lines labelled 'NEED CHANGED' are to instantiate what language pair you wish to experiment with. 
 
-     ** For 'DIFF' environment variable:
-         if L1 is chinese,  +20 - english, +40 - spanish, +60 - yoruba, +80 - turkish
-         if L1 is english,  -20 - chinese, +20 - spanish,  +40 - yoruba,  +60 - turkish
-         if L1 is spanish,  -40 - chinese, -20 - english, +20 - yoruba, +40 - turkish
-         if L1 is yoruba,   -60 - chinese, -40 - english, -20 - spanish,  +20 - turkish
-         if L1 is turkish,  -80 - chinese, -60 - english, -40 - spanish, -20 - yoruba
+      **For 'DIFF' environment variable:**
+    - if L1 is chinese
+       - +20 english
+       - +40 spanish
+       - +60 yoruba
+       - +80 turkish
+    - if L1 is english
+       - -20 chinese
+       - +20 spanish
+       - +40 yoruba
+       - +60 turkish
+    - if L1 is spanish
+       - -40 chinese
+       - -20 english
+       - +20 yoruba
+       - +40 turkish
+    - if L1 is yoruba
+       - -60 chinese
+       - -40 english
+       - -20 spanish
+       - +20 turkish
+    - if L1 is turkish
+       - -80 chinese
+       - -60 english
+       - -40 spanish
+       - -20 yoruba
                        
 4. From a terminal, 'cd' into the PETScan folder. 
 
