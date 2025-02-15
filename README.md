@@ -15,7 +15,7 @@ Instructions for running PETScan.
 
 2. Make sure local/run.sh is correctly configured, and if this is the first time using the experiment runner, ensure that the 'requirements' line is uncommented. 
 
-3. Ensure src/launch.py values are correctly set - including the exp_dir path. **IMPORTANT** - the lines labelled 'NEED CHANGED' are to instantiate what language pair you wish to experiment with. 
+3. Ensure src/launch.py values are correctly set - including the exp_dir path. **IMPORTANT** - the lines labelled 'CHANGE' are to instantiate what language pair you wish to experiment with. 
 
       **For 'DIFF' environment variable:**
     - if L1 is chinese
