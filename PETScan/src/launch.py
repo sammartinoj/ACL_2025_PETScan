@@ -21,15 +21,15 @@ os.environ['TRAIN_RESULTS_CSV'] = f'{EXP_DIR}/results_train_ch_yo.csv'
 os.environ['TEST_RESULTS_CSV'] = f'{EXP_DIR}/results_test_ch_yo.csv'
 os.environ['letter'] = 'a' # used to separate checkpoints if running multiple combinations at once 
 os.environ['LANGS'] =  "['chinese', 'yoruba']" 
-os.environ['DIFF'] = '+60' # see note in readme file for different 'difference' values
+os.environ['DIFF'] = '+60' # see note in readme file for different 'DIFF' values
 os.environ['L1'] = 'chinese'
 os.environ['L2'] = 'yoruba'
 
 
 # model names
-os.environ['MODEL_NAME'] = "xlm-roberta-base" # 'dccuchile/bert-base-spanish-wwm-cased' #  'xlm-roberta-large' , 'bert-base-multilingual-cased'
-os.environ['TOKENIZER_NAME'] = "xlm-roberta-base" # 'dccuchile/bert-base-spanish-wwm-cased' #  'xlm-roberta-large' , 'bert-base-multilingual-cased'
-os.environ['EXP_DIR'] = EXP_DIR # leave this as is
+os.environ['MODEL_NAME'] = "xlm-roberta-base" 
+os.environ['TOKENIZER_NAME'] = "xlm-roberta-base"
+os.environ['EXP_DIR'] = EXP_DIR
 os.environ['SAVE_MODELS'] = 'True' # if True, will output best models for each trial into a folder called "saved_models" in EXP_DIR
 
 # personal note created in EXP_DIR
